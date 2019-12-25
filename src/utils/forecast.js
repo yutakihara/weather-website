@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
         }
         else {
             const curr = body.currently;
-            callback(undefined, `${body.daily.data[0].summary} It is currently ${curr.temperature}°C out and ${curr.precipIntensity}% chance of rain.`);
+            callback(undefined, `${body.daily.data[0].summary} It is currently ${curr.temperature}°C and ${curr.precipIntensity}% chance of rain.`);
         }
     });
 }
